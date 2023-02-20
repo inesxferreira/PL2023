@@ -34,7 +34,7 @@ def distr_idade():
 
 def distr_colesterol():
     distribuição = defaultdict(int)
-    for colesterol in range(0, 400, 10):
+    for colesterol in range(0, 500, 10):
         key = f'{colesterol}-{colesterol+10}'
         distribuição[key] = sum([1 for i in range(
             len(modelo['colesterol'])) if int(modelo['colesterol'][i]) >= colesterol and int(modelo['colesterol'][i]) <= colesterol+10 and int(modelo['temDoença'][i] == '1')])
