@@ -67,7 +67,7 @@ def main(csv_file, json_file):
             data.append(dict4)
 
         # Escreve no ficheiro .json
-        json_str = json.dumps(data, ensure_ascii=False)
+        json_str = json.dumps(data, ensure_ascii=False,indent=4)
         f.write(json_str)
 
 
